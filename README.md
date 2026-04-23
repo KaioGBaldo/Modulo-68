@@ -36,6 +36,6 @@ Olá, meu nome é **Kaio**, tenho 22 anos. Como meu foco principal é o **Back-E
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=092E20)](https://linkedin.com/in/kaio-grativol-baldo-071a74150/)
 [![Instagram](https://img.shields.io/badge/Instagram-000?style=for-the-badge&logo=instagram&logoColor=092E20)](https://www.instagram.com/kaiull__/)
 [![GitHub](https://img.shields.io/badge/Github-000?style=for-the-badge&logo=github&logoColor=092E20)](https://github.com/SeuUsuarioAqui)
-
 ---
 *Projeto desenvolvido para consolidar conhecimentos em segurança de APIs e autenticação baseada em tokens com DRF.*
+
