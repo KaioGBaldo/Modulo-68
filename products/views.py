@@ -1,5 +1,5 @@
 from rest_framework import viewsets
-from rest_framework.permissions import IsAuthenticated # <--- Verifique se importou isso
+from rest_framework.permissions import IsAuthenticated, AllowAny
 from .models import Produto, Order
 from .serializers import ProdutoSerializer, OrderSerializer
 
