@@ -1,16 +1,15 @@
-[project]
+[tool.poetry]
 name = "modulo-68"
 version = "0.1.0"
 description = ""
-authors = [
-    {name = "Kaio Grativol Baldo",email = "78832356+KaioGBaldo@users.noreply.github.com"}
-]
+authors = ["Kaio Grativol <kaio@exemplo.com>"]
 readme = "README.md"
-requires-python = ">=3.12"
-dependencies = [
-    "django (>=6.0.4,<7.0.0)",
-    "djangorestframework (>=3.17.1,<4.0.0)"
-]
+
+[tool.poetry.dependencies]
+python = ">=3.12"
+django = "*"
+djangorestframework = "*"
+
 
 
 [build-system]
