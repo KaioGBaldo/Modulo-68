@@ -1,15 +1,14 @@
 from rest_framework import viewsets
-from rest_framework.permissions import IsAuthenticated
-from products.models import Product, Order
-from products.serializers import ProductSerializer, OrderSerializer
+from rest_framework.permissions import IsAuthenticated, AllowAny
+from .models import Produto, Order
+from .serializers import ProdutoSerializer, OrderSerializer
 
 class ProductViewSet(viewsets.ModelViewSet):
-    queryset = Product.objects.all()
-    serializer_class = ProductSerializer
-    # Opcional: define permissão específica por view
-    permission_classes = [IsAuthenticated] 
+    queryset = Produto.objects.all()
+    serializer_class = ProdutoSerializer
+    permission_classes = [AllowAny] # <--- ESSA LINHA É A TRAVA
 
 class OrderViewSet(viewsets.ModelViewSet):
     queryset = Order.objects.all()
     serializer_class = OrderSerializer
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAuthenticated] # <--- ESSA LINHA É A TRAVA

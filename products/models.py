@@ -7,3 +7,11 @@ class Produto(models.Model):
 
     def __str__(self):
         return self.nome
+
+class Order(models.Model):
+    produto = models.ForeignKey(Produto, on_delete=models.CASCADE)
+    quantidade = models.IntegerField(default=1)
+    data_pedido = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"Pedido {self.id} - {self.produto.nome}"
